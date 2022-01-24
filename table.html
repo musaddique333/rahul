@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Table</title>
+		<link rel="stylesheet" href="mystyles.css">
+	    <style type="text/css">
+        
+		body.groove {border-style: groove;}
+		* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('searchicon.jpg');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+            body{
+                background-color: darkgrey;
+            }
+            .topnav {
+  overflow: hidden;
+  background-color: #189AB5;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.botnav {
+  overflow: hidden;
+  background-color: #189AB4;
+}
+        img.l{
+            height: 150px;
+            width: 150px;
+            text-align: center;
+	</style>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+    
+<body>
+     <center><img class="l" src="l.jpg"></center>
+    <center><u> <h1>BLOOD MANAGEMENT SYSTEM </h1></u></center>
+   <div class="topnav">
+      <a href="Navbar.html"><i class="fa fa-home"></i> Home</a>
+	  <a href="Registrationform.html"><i class="fa fa-fw fa-user"></i>Registration</a>
+	  <a href="login.html"><i class="glyphicon glyphicon-log-out"></i> Login</a>
+	  <a href="table.html"><i class="fa fa-medkit"></i> Blood Search</a>
+	  <a href="videos.html"><i class="fa fa-play"></i> Videos</a>
+       
+      <a href="articles.html"><i class="far fa-edit"></i> Articles</a>
+      <a href="about.html"><i class="fas fa-bars"></i> About us</a>
+	</div>
+	<br>
+	<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search By Availability Blood Group.." title="Type in a name">
+
+<table id="myTable">
+  <tr class="header">
+    <th style="width:60%;">Blood Bank/Hospital</th>
+    <th style="width:40%;">Address</th>
+    <th style="width:40%;">Availability Of Blood</th>
+       <th style="width:40%;">Contact Details</th>
+   </tr>
+    
+  <tr>
+    <td>1.Rajarajeshwari Medical College Hospital</td>
+    <td>202, Kambipura, Mysore Rd, Bengaluru, 5th cross, Mysore Road,
+New Guddadahalli, Bangalore, Bangalore, Bangalore Urban,
+Karnataka</td>
+    <td>Available private, O+Ve:2</td>
+    <td>Phone: 9845128072,65666768 ,Fax: -, Email:
+    bloodbank@rrmch.org</td>
+  </tr>
+    
+  <tr>
+    <td>2. Sri Jayadeva institute of cardiovascular sciences & research,
+Bengaluru</td>
+    <td>Sri Jayadeva Institute of cardiovascular Sciences &research,
+Gurappanapalya Post Banneraghatta Road Bengaluru, opposite
+AIRTEL, Bangalore, Bangalore Urban, Karnataka</td>
+    <td> Govt.
+Whole Blood Not Available Search for another Component</td>
+    <td>Phone: 9886812718,8026534600 ,Fax: -, Email:
+nanduma64@gmail.com</td>
+  </tr>
+    
+  <tr>
+    <td>3. Sparsh Hospital Blood Centre</td>
+    <td>Ground Floor No. 8 ideal homes,HBCS Layout,Rajarajeshwari
+Nagar, Bangalore Urban, Karnataka</td>
+    <td>Private
+Whole BloodNot Available Search for another Component</td>
+    <td>Phone: 9513466057 ,Fax: -, Email:
+bloodbank.msr@sparshhospital.com</td>
+  </tr>
+  
+ <tr>
+     <td></td>
+     <td></td>
+     <td></td>
+     <td></td>
+</tr>
+
+</table>
+</body>
+</html>

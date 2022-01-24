@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome</title>
+	<link rel="stylesheet" href="mystyles.css">
+	<style type="text/css">
+		body.groove {border-style: groove;}
+        h1,p{font-family: sans-serif;
+            font-size: 150%;
+            text-align: center;
+        }
+        img.l{
+            height: 150px;
+            width: 150px;
+            text-align: center;
+        }
+        footer{
+            font-size: 300%;
+        }
+	</style>
+    
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    </head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/w3css/3/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    
+<body class="groove">
+    <center><img class="l" src="l.jpg"></center>
+    <center><u> <h1>BLOOD MANAGEMENT SYSTEM </h1></u></center>
+   <div class="topnav">
+      <a href="#"><i class="fa fa-home"></i> Home</a>
+	  <a href="Registrationform.html"><i class="fa fa-fw fa-user"></i>Registration</a>
+	  <a href="login.html"><i class="glyphicon glyphicon-log-out"></i> Login</a>
+	  <a href="table.html"><i class="fa fa-medkit"></i> Blood Search</a>
+	  <a href="videos.html"><i class="fa fa-play"></i> Videos</a>
+       
+      <a href="articles.html"><i class="far fa-edit"></i> Articles</a>
+      <a href="about.html"><i class="fas fa-bars"></i> About us</a>
+	</div>
+	<br>
+<section>
+  <img class="mySlides" src="h1.jpeg"
+  style="width:100%">
+  <img class="mySlides" src="h2.jpg"
+  style="width:100%">
+  <img class="mySlides" src="h4.jpg"
+  style="width:100%">
+</section>
+    <center>
+<section class="w3-container w3-center w3-content" style="max-width:600px">
+    <center> <h2 class="w3-wide">About "BLOOD"</h2></center>
+  <p class="w3-opacity"><i>Donate blood, save lives!</i></p>
+       <p  class="w3-justify"><center>A complete blood type would describe each of the 38 blood groups, and an individual's blood type is one of many possible combinations of blood-group antigens. Almost always, an individual has the same blood group for life, but very rarely an individual's blood type changes through addition or suppression of an antigen in infection, malignancy, or autoimmune disease.Another more common cause of blood type change is a bone marrow transplant. Bone-marrow transplants are performed for many leukemias and lymphomas, among other diseases. If a person receives bone marrow from someone of a different ABO type (e.g., a type A patient receives a type O bone marrow), the patient's blood type should eventually becomes the donor's type, as the patient's hematopoietic stem cells (HSCs) are destroyed, either by ablation of the bone marrow or by the donor's T-cells. Once all the patient's original red blood cells have died, they will have been fully replaced by new cells derived from the donor HSCs. Provided the donor had a different ABO type, the new cells' surface antigens will be different from those on the surface of the patient's original red blood cells.[citation needed]</center></p>
+
+    <p>Some blood types are associated with inheritance of other diseases; for example, the Kell antigen is sometimes associated with McLeod syndrome.[7] Certain blood types may affect susceptibility to infections, an example being the resistance to specific malaria species seen in individuals lacking the Duffy antigen.[8] The Duffy antigen, presumably as a result of natural selection, is less common in population groups from areas having a high incidence of malaria.[9]</p>
+    </section>
+    </center>
+
+<section class="w3-row-padding w3-center w3-light-grey">
+  <article class="w3-third">
+    <p>Map</p>
+    <img src="h5.jpg" alt="Random Name" style="width:100%">
+    <p>Blood availability Globally</p>
+  </article>
+
+</section>
+
+<!-- Footer -->
+    <center>
+<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+  <a href="#"><i class="fa fa-facebook-official"></i></a>
+  <a href="#"><i class="fa fa-pinterest-p"></i></a>
+  <a href="#"><i class="fa fa-twitter"></i></a>
+  <a href="#"><i class="fa fa-flickr"></i></a>
+  <a href="#"><i class="fa fa-linkedin"></i></a>
+  <p class="w3-medium">
+  All rights reserved <a href="https://www.w3schools.com/w3css/default.asp" target="_blank"></a>
+  </p>
+</footer>
+    </center>
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+
+</body>
+</html>

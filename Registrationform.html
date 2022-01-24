@@ -1,0 +1,201 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <script>
+            function registration() {
+                var name = 
+                    document.forms["RegForm"]["Name"];
+                var email = 
+                    document.forms["RegForm"]["EMail"];
+                if (!email.value.match(pattern))
+             {
+                 error = "EMAIL is invalid!"
+                 ;
+             }
+                var phone = 
+                    document.forms["RegForm"]["phone"];
+                var what = 
+                    document.forms["RegForm"]["Gender"];
+                var password = 
+                    document.forms["RegForm"]["Password"];
+                var address = 
+                    document.forms["RegForm"]["Address"];
+                  var aadhar = 
+                    document.forms["RegForm"]["aadhar"];
+                var blood = 
+                    document.forms["RegForm"]["blood"]; 
+                var DOB = 
+                    document.forms["RegForm"]["DOB"];
+                 var pattern=/^[^]+@[^]+\.[a-z]{2,3}$/;
+                if (name.value == "") {
+                    window.alert("Please enter your name.");
+                    name.focus();
+                    return false;
+                }
+  
+                if (address.value == "") {
+                    window.alert("Please enter your address.");
+                    address.focus();
+                    return false;
+                }
+                   if (DOB.value == "") {
+                    window.alert("Please enter your date of birth.");
+                    DOB.focus();
+                    return false;
+                }
+  
+                if (email.value == "") {
+                    window.alert(
+                      "Please enter a valid e-mail address.");
+                    email.focus();
+                    return false;
+          
+             }
+             
+                if (phone.value == "") {
+                    window.alert(
+                      "Please enter your phone number.");
+                    phone.focus();
+                    return false;
+                }
+                if (phone.value.length != 10) {
+                      window.alert("phone  number should be a 10 digit number");
+                      phone.focus();
+                      return false;
+                  }
+                if (password.value == "") {
+                    window.alert("Please enter your password");
+                    password.focus();
+                    return false;
+                }
+                  if (aadhar.value == "") {
+                    window.alert("Please enter your aadhar number");
+                    aadhar.focus();
+                    return false;
+                }
+                  if (aadhar.value.length != 16) {
+                      window.alert("Aadhaar Card number should be a 16 digit number");
+                      aadhar.focus();
+                      return false;
+                  }
+                  if (blood.value == "") {
+                    window.alert("Please enter your password");
+                    blood.focus();
+                    return false;
+                }
+  
+                if (what.selectedIndex < 1) {
+                    alert("Please enter your Gender.");
+                    what.focus();
+                    return false;
+                }
+  
+                return true;
+            }
+        </script>
+  
+        <style>
+            body{ font-family: Calibri, Helvetica, sans-serif;
+    background-image:url(reg.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+            div{text-align: center;}
+            span{
+                border: 1px;
+            }
+            form {
+                margin: 0 auto;
+                width: 600px;
+            }
+               .topnav {
+  overflow: hidden;
+  background-color: #189AB5;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.botnav {
+  overflow: hidden;
+  background-color: #189AB4;
+}
+
+        img.l{
+            height: 150px;
+            width: 150px;
+            text-align: center;
+        </style>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    </head>
+  
+    <body>
+            <center><img class="l" src="l.jpg"></center>
+    <center><u> <h1>BLOOD MANAGEMENT SYSTEM </h1></u></center>
+   <div class="topnav">
+      <a href="Navbar.html"><i class="fa fa-home"></i> Home</a>
+	  <a href="Registrationform.html"><i class="fa fa-fw fa-user"></i>Registration</a>
+	  <a href="login.html"><i class="glyphicon glyphicon-log-out"></i> Login</a>
+	  <a href="table.html"><i class="fa fa-medkit"></i> Blood Search</a>
+	  <a href="videos.html"><i class="fa fa-play"></i> Videos</a>
+       
+      <a href="articles.html"><i class="far fa-edit"></i> Articles</a>
+      <a href="about.html"><i class="fas fa-bars"></i> About us</a>
+	</div>
+        <u> <h1 style="text-align: center;">REGISTRATION FORM</h1></u>
+        <form name="RegForm" action="/submit.php" 
+              onsubmit="return registration()" method="post">
+            <p>Name: <input type="text"  id="name"
+                            size="65" name="Name" /></p>
+            <br/>
+            <p><span>Address:</span><span> <input type="text" s
+                                                  size="65" name="Address" /></span>
+          </p>
+            <br/>
+            <p><span>DOB:</span><span> <input type="date" id="name" name="DOB" placeholder="Enter your DOb"></span></p>
+            <br>
+            <p><span>E-mail:</span> <span><input type="text" id="name"  size="65" name="EMail" /></span></p>
+            <br/>
+            <p>Password: <input type="text"  id="name"
+                         size="65" name="Password" /></p>
+            <br/>
+            <p>phone: <input type="text" id="name" 
+                        size="65" name="phone" /></p>
+            <br/>
+            <p>Aadhaar Number <input type="text" size="55" id="name" name="aadhar" />  </p>
+            <br/>s
+            <p> Blood Group <input type="text" id="name"
+                        size="65" name="blood" /></p>
+            <br/>
+  
+            <p>
+                Enter your Gender
+                <select type="text" value="" id="name" name="Gender">
+                    <option>MALE</option>
+                    <option>FEMALE</option>
+                    <option>OTHERS</option>
+                    
+                </select>
+            </p>
+            <br />
+            <br />
+            <p>Remarks: <textarea cols="55" 
+                              name="Comment"> </textarea></p>
+            <p>
+                <input type="submit" 
+                       value="Submit" name="Submit" />
+                <input type="reset" 
+                       value="Reset" name="Reset" />
+            </p>
+        </form>
+    </body>
+</html>

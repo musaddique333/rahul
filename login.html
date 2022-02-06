@@ -1,157 +1,63 @@
-<!DOCTYPE html> 
-<html> 
+<!doctype html>
+<html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title> Login Page </title>
-<style> 
-Body {
-  font-family: Calibri, Helvetica, sans-serif;
-  background-image:url(BG.jpeg);
-    background-repeat: no-repeat;
-    background-size:cover; 
-}
-button { 
-       background-color: #4CAF50; 
-       width: 100%;
-        color: orange; 
-        padding: 15px; 
-        margin: 10px 0px; 
-        border: none; 
-        cursor: pointer; 
-         } 
- form { 
-        border: 3px solid #f1f1f1; 
-    } 
- input[type=text], input[type=password] { 
-        width: 20%; 
-        height: 10px;
-        margin: 8px 0;
-        padding: 12px 20px; 
-        display: inline-block; 
-        border: 2px solid green; 
-        box-sizing: border-box; 
-    }
- button:hover { 
-        opacity: 0.7; 
-    } 
-  .cancelbtn { 
-        width: auto; 
-        padding: 10px 18px;
-        margin: 10px 5px;
-    } 
-      
-   
- .container { 
-        padding: 25px; 
-        background-color:transparent;
-    } 
-    .topnav {
-  overflow: hidden;
-  background-color: #189AB5;
-}
-
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-.botnav {
-  overflow: hidden;
-  background-color: #189AB4;
-}
-div.term{
-            height: 30px;
-            background: rgb(68, 200, 16);
-        }
-        img.l{
-            height: 150px;
-            width: 150px;
-            text-align: center;
-	</style>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="stylesLogin.css">
+    <script type="text/javascript" src="mainLogin.js"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-</head>  
-<body>  
-     <center><img class="l" src="l.jpg"></center>
-    <center><u> <h1>BLOOD MANAGEMENT SYSTEM </h1></u></center>
-    <div class="term" style="text-align: center; font-size: 20px;">
-        <a href="Navbar.html"><i class="fa fa-home"></i> Home </a>
-        <a href="Registrationform.html"><i class="fa fa-fw fa-user"></i>    Registration </a>
-        <a href="login.html"><i class="glyphicon glyphicon-log-out"></i> Login </a>
-        <a href="table.html"><i class="fa fa-medkit"></i> Blood Search </a>
-        <a href="videos.html"><i class="fa fa-play"></i> Videos </a>
-         <a href="articles.html"><i class="far fa-edit"></i> Articles </a>
-        <a href="about.html"><i class="fas fa-bars"></i> About us </a>
-      </div>
-    <center> <h1>  Login  </h1> </center> 
-    <form id="form" action="#">
-        <div class="container"> 
-            <label>Email : </label> 
-            <input type="email" id="email" placeholder="Enter Email Address" onkeydown="validation()" name="" required>
-            <span id="text"></span>
-            <br>
-            <label>Password : </label> 
-            <input type="password" id="password" placeholder="Enter Password" name="password" required>
-            <span id="text"></span>
-            <button type="submit">Login</button> 
-            <input type="checkbox" checked="checked"> Remember me 
-            <button type="button" class="cancelbtn"> Cancel</button> 
-            Forgot <a href="#"> password? </a> 
-        </div> 
-    </form> 
+</head>
     
-    <script type="text/javascript">
-    function validation()
-        {
-            var form=document.getElemenyById("form");
-            var email=document.getElemenyById("email").value;
-            var text=document.getElemenyById("text");
-            var pattern=/^[^]+@[^]+\.[a-z]{2,3}$/;
-            var password=document.getElemenyById("password"),value;
-           ;
+<body>
+    <div class="container">
+        <form id="linkForm">
+            <center><img class="l" src="l.jpg"></center>
+     <center><u> <h1 id="blood">BLOOD MANAGEMENT SYSTEM </h1></u></center>
+    
+           <div class="topnav">
+              <a href="Navbar.html"><i class="fa fa-home"></i> Home</a>
+	          <a href="Registrationform.html"><i class="fa fa-fw fa-user"></i>Registration</a>
+	          <a href="login.html"><i class="glyphicon glyphicon-log-out"></i> Login</a>
+	          <a href="table.html"><i class="fa fa-medkit"></i> Blood Search</a>
+	          <a href="videos.html"><i class="fa fa-play"></i> Videos</a>
+              <a href="articles.html"><i class="far fa-edit"></i> Articles</a>
+              <a href="about.html"><i class="fas fa-bars"></i> About us</a>
+	        </div>
             
-            if (email.match(pattern))
-                {
-                    form.classList.add("valid")
-                    form.classList.remove("invalid")
-                    text.innerHTML="Your email is Valid.";
-                    text.style.color="#00ff00";
-                    
-                }
-            else
-                {
-                    form.classList.remove("valid")
-                    form.classList.add("invalid")
-                    text.innerHTML="Please enter Valid email address";
-                    text.style.color="#ff0000";
-                    
-                }
-            if(email=="")
-            {
-                    form.classList.remove("valid")
-                    form.classList.remove("invalid")
-                    text.innerHTML="";
-                    text.style.color="#00ff00";
-            }
-            if (password.value.length <= 6)
-                {
-                    text.innerHTML="Password must be longer than 6";
-                }
-            if (password.value.length >= 20)
-                {
-                    text.innerHTML="Password must be less than 20";
-                }
-            if(password=="")
-                {
-                    text.innerHTML="";
-                }
-          
-        }
-    </script>
-</body>   
+            <h3>Log In</h3>
+            
+            <div class="inputBox">
+                <span>Username</span>
+                <div class="box">
+                    <div class="icon"><ion-icon name="person"></ion-icon></div>
+                    <input type="text" id="userName">
+                </div>
+            </div>
+            
+            <div class="inputBox">
+                <span>Password</span>
+                <div class="box">
+                    <div class="icon"><ion-icon name="lock-closed"></ion-icon></div>
+                    <input type="password" id="password">
+                </div>
+            </div>
+            <label>
+                <input type= "checkbox"> Remember me
+            </label>
+            
+            <div class="inputBox">
+                <div class="box">
+                    <input type="submit" value="Log in" onclick="checkEmptyInput()" type="submit">
+                </div>
+            </div>
+            <a href="#" class="forgot">Forgot Password</a>
+            
+        </form>
+    </div> 
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
 </html>
